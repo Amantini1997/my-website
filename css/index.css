@@ -16,7 +16,7 @@ button {
   background-color: black;
 }
 
-.flex-center, footer {
+.flex-center, .flex-col, .flex-row, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,6 +28,20 @@ button {
           align-items: center;
 }
 
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 :root {
   --header-height: 450px;
 }
@@ -37,22 +51,51 @@ header {
 }
 
 header * {
+  background-color: transparent;
+}
+
+header > nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   color: white;
-  font-size: larger;
-  background: transparent;
+  margin: 10px 30px 40px;
+}
+
+header > nav > a {
+  outline: none;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+header > nav > a:hover {
+  text-decoration: underline;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .show-up {
+  -webkit-animation: showUp 1s;
+          animation: showUp 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: var(--delay-show-up);
+          animation-delay: var(--delay-show-up);
+  overflow: hidden;
+  visibility: hidden;
+  height: 67px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
   font-size: xxx-large;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   letter-spacing: 1px;
-}
-
-header > .card {
-  height: 250px;
-  width: 300px;
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
-  border-radius: 50px;
 }
 
 header *,
@@ -74,5 +117,27 @@ footer img {
 
 main {
   margin: 0 200px;
+}
+
+@-webkit-keyframes showUp {
+  from {
+    visibility: visible;
+    padding-top: 67px;
+  }
+  to {
+    padding-top: 0;
+    visibility: visible;
+  }
+}
+
+@keyframes showUp {
+  from {
+    visibility: visible;
+    padding-top: 67px;
+  }
+  to {
+    padding-top: 0;
+    visibility: visible;
+  }
 }
 /*# sourceMappingURL=index.css.map */

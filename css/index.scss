@@ -7,21 +7,49 @@
 header {
     height: var(--header-height);
 
-    & * {
+    * {
+        background-color: transparent;
+    }
+
+    > nav {
+        display: flex;
+        justify-content: flex-end;
         color: white;
-        font-size: larger;
-        background: transparent;
+        margin: 10px 30px 40px;
+
+        > a {
+            outline: none;
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+
+            &:hover {
+                text-decoration: underline;
+                transition: .5s;
+            }
+        }
+    }
+
+    .show-up {
+        animation: showUp 1s;
+        animation-fill-mode: forwards;
+        animation-delay: var(--delay-show-up);
+        overflow: hidden;
+        visibility: hidden;
+        height: 67px;
+        box-sizing: border-box;
+        color: white;
         font-size: xxx-large;
         width: fit-content;
         letter-spacing: 1px;
     }
 
-    & > .card {
-        height: 250px;
-        width: 300px;
-        backdrop-filter: blur(30px);
-        border-radius: 50px; 
-    }
+    // & > .card {
+    //     height: 250px;
+    //     width: 300px;
+    //     backdrop-filter: blur(30px);
+    //     border-radius: 50px; 
+    // }
 }
 
 header *,
@@ -35,11 +63,21 @@ footer {
     height: 100px;
     justify-content: space-evenly;
 
-    & img {
+    img {
         width: 35px;
     }
 }
 
 main {
     margin: 0 200px;
+}
+
+@keyframes showUp {
+    from {
+        visibility: visible;
+        padding-top: 67px;
+    } to {
+        padding-top: 0;
+        visibility: visible;
+    }
 }

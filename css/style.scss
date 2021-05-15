@@ -5,6 +5,14 @@ body {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
 button {
     cursor: pointer;
 }
@@ -20,4 +28,14 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flex-col {
+    @extend .flex-center;
+    flex-direction: column;
+}
+
+.flex-row {
+    @extend .flex-center;
+    flex-direction: row;
 }
