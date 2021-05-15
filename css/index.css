@@ -4,6 +4,15 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
 button {
   cursor: pointer;
 }
@@ -72,10 +81,19 @@ header > nav > a {
   margin: 10px;
 }
 
-header > nav > a:hover {
-  text-decoration: underline;
+header > nav > a::before {
+  content: "";
+  border-bottom: 2px solid white;
   -webkit-transition: .5s;
   transition: .5s;
+  color: white;
+  height: 2px;
+  position: absolute;
+  top: 30px;
+}
+
+header > nav > a:hover::before {
+  padding-right: var(--width-underline);
 }
 
 header .show-up {
@@ -117,6 +135,20 @@ footer img {
 
 main {
   margin: 0 200px;
+}
+
+@-webkit-keyframes underline-lr {
+  from {
+  }
+  to {
+  }
+}
+
+@keyframes underline-lr {
+  from {
+  }
+  to {
+  }
 }
 
 @-webkit-keyframes showUp {

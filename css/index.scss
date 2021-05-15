@@ -23,9 +23,19 @@ header {
             color: white;
             margin: 10px;
 
-            &:hover {
-                text-decoration: underline;
+            &::before {      
+                content: "";
+                border-bottom: 2px solid white;
+                -webkit-transition: .5s;
                 transition: .5s;
+                color: white;
+                height: 2px;
+                position: absolute;
+                top: 30px;
+            }
+
+            &:hover::before {
+                padding-right: var(--width-underline);
             }
         }
     }
@@ -43,13 +53,6 @@ header {
         width: fit-content;
         letter-spacing: 1px;
     }
-
-    // & > .card {
-    //     height: 250px;
-    //     width: 300px;
-    //     backdrop-filter: blur(30px);
-    //     border-radius: 50px; 
-    // }
 }
 
 header *,
@@ -70,6 +73,14 @@ footer {
 
 main {
     margin: 0 200px;
+}
+
+@keyframes underline-lr {
+    from {
+
+    } to {
+
+    }
 }
 
 @keyframes showUp {
