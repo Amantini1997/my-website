@@ -1,0 +1,45 @@
+@import "./style.scss";
+
+:root {
+    --header-height: 450px;
+}
+
+header {
+    height: var(--header-height);
+
+    & * {
+        color: white;
+        font-size: larger;
+        background: transparent;
+        font-size: xxx-large;
+        width: fit-content;
+        letter-spacing: 1px;
+    }
+
+    & > .card {
+        height: 250px;
+        width: 300px;
+        backdrop-filter: blur(30px);
+        border-radius: 50px; 
+    }
+}
+
+header *,
+footer * {
+    font-family: 'Poppins';
+}
+
+footer {
+    @extend .flex-center;
+    color: white;   
+    height: 100px;
+    justify-content: space-evenly;
+
+    & img {
+        width: 35px;
+    }
+}
+
+main {
+    margin: 0 200px;
+}
