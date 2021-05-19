@@ -9,6 +9,7 @@ header {
 
     * {
         background-color: transparent;
+        color: white;
     }
 
     > nav {
@@ -73,6 +74,11 @@ footer {
 
 main {
     margin: 0 200px;
+
+    .embed {
+        border-radius: 25px;
+        float: var(--float);
+    }
 }
 
 @keyframes underline-lr {

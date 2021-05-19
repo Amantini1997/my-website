@@ -1,0 +1,11 @@
+.memo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+}
+
+.memo > iframe {
+  margin-right: 20px;
+}
+/*# sourceMappingURL=projects.css.map */

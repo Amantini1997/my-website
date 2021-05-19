@@ -1,0 +1,8 @@
+.memo {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+
+    > iframe {
+        margin-right: 20px;
+    }
+}

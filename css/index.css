@@ -61,6 +61,7 @@ header {
 
 header * {
   background-color: transparent;
+  color: white;
 }
 
 header > nav {
@@ -135,6 +136,11 @@ footer img {
 
 main {
   margin: 0 200px;
+}
+
+main .embed {
+  border-radius: 25px;
+  float: var(--float);
 }
 
 @-webkit-keyframes underline-lr {
