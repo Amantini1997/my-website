@@ -23,7 +23,12 @@
             }
         }
     
-        .phone {        
+        .phone {  
+                  
+            &:first-of-type {
+                position: relative;
+                z-index: -2;
+            }
 
             .frame {
                 background-color: transparent;

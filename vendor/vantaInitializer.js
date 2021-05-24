@@ -1,9 +1,9 @@
 const BIRDS = true;
 
 import("https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js")
-    .then(_ => loadVante());
+    .then(_ => loadVanta());
 
-function loadVante() {
+function loadVanta() {
     if (BIRDS) {
         import("https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js")
                 .then(_ => {
@@ -27,6 +27,8 @@ function loadVante() {
                         cohesion: 1.00,
                         quantity: 4.00
                     });
+
+                    setVantaBody(VANTA);
                 })
                 .catch(err => console.error("Birds not loaded: \n", err));
     } else {  
@@ -47,5 +49,32 @@ function loadVante() {
                     });
                 })
                 .catch(err => console.error("Birds not loaded: \n", err));
+                
+        import("https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js")
+                .then(_ => {
+                    setVantaBody(VANTA);
+                })
+                .catch(err => console.error("Birds not loaded: \n", err));
     }
+}
+
+function setVantaBody(VANTA){
+    VANTA.BIRDS({
+        el: "body",
+        mouseControls: false,
+        touchControls: false,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0x0,
+        color1: 0x17ae38,
+        color2: 0xcfff,
+        birdSize: 1.10,
+        separation: 100.00,
+        alignment: 93.00,
+        cohesion: 1.00,
+        quantity: 2.00
+    });
 }

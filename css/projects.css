@@ -78,6 +78,10 @@ button {
   padding-left: 30px;
 }
 
+img.logo {
+  width: 35px;
+}
+
 .memo {
   display: -ms-grid;
   display: grid;
@@ -103,6 +107,11 @@ button {
   color: #d4d4d4;
   width: 313px;
   height: 40px;
+}
+
+.memo__image .phone:first-of-type {
+  position: relative;
+  z-index: -2;
 }
 
 .memo__image .phone .frame {
