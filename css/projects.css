@@ -1,3 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+html,
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline: none;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  color: white;
+}
+
+.flex-center, .flex-col, .memo__image iframe, .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-col, .memo__image iframe {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.overlap {
+  display: -ms-grid;
+  display: grid;
+}
+
+.overlap > * {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
+.trans-bg {
+  background-color: transparent;
+}
+
 .memo {
   display: -ms-grid;
   display: grid;
@@ -5,7 +74,35 @@
       grid-template-columns: repeat(2, auto);
 }
 
-.memo > iframe {
-  margin-right: 20px;
+.memo__image {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  margin-right: 30px;
+}
+
+.memo__image iframe::before {
+  content: "-";
+  background-color: #fff;
+  color: #fff;
+  width: 313px;
+  height: 40px;
+}
+
+.memo__image .phone .frame {
+  background-color: transparent;
+  width: 313px;
+  height: 600px;
+  pointer-events: none;
+  position: relative;
+  z-index: 1;
+}
+
+.memo__description {
+  padding: 40px;
 }
 /*# sourceMappingURL=projects.css.map */

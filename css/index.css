@@ -2,6 +2,7 @@
 html,
 body {
   margin: 0;
+  background-color: #000;
 }
 
 h1,
@@ -13,6 +14,12 @@ h6 {
   color: white;
 }
 
+h2 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+}
+
 button {
   cursor: pointer;
 }
@@ -22,7 +29,7 @@ button {
   outline: none;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  background-color: black;
+  color: white;
 }
 
 .flex-center, .flex-col, .flex-row, footer {
@@ -51,6 +58,22 @@ button {
           flex-direction: row;
 }
 
+.overlap {
+  display: -ms-grid;
+  display: grid;
+}
+
+.overlap > * {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
+.trans-bg {
+  background-color: transparent;
+}
+
 :root {
   --header-height: 450px;
 }
@@ -76,25 +99,34 @@ header > nav {
 }
 
 header > nav > a {
-  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
   text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  outline: none;
   color: white;
-  margin: 10px;
+  margin: 10px 20px;
 }
 
-header > nav > a::before {
+header > nav > a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
   content: "";
-  border-bottom: 2px solid white;
-  -webkit-transition: .5s;
-  transition: .5s;
-  color: white;
+  display: block;
   height: 2px;
+  left: 50%;
   position: absolute;
-  top: 30px;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
 
-header > nav > a:hover::before {
-  padding-right: var(--width-underline);
+header > nav > a:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 header .show-up {
@@ -135,7 +167,7 @@ footer img {
 }
 
 main {
-  margin: 0 200px;
+  margin: 0 12.5vw;
 }
 
 main .embed {

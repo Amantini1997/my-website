@@ -19,25 +19,50 @@ header {
         margin: 10px 30px 40px;
 
         > a {
-            outline: none;
+            text-transform: uppercase;
+            letter-spacing: 0.10em;
             text-decoration: none;
+            
+            display: inline-block;
+            padding: 10px;
+            position: relative;
+
+            outline: none;
             color: white;
-            margin: 10px;
-
-            &::before {      
+            margin: 10px 20px;
+          
+            &::after {    
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
                 content: "";
-                border-bottom: 2px solid white;
-                -webkit-transition: .5s;
-                transition: .5s;
-                color: white;
+                display: block;
                 height: 2px;
+                left: 50%;
                 position: absolute;
-                top: 30px;
+                background: #fff;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
             }
 
-            &:hover::before {
-                padding-right: var(--width-underline);
+            &:hover::after { 
+                width: 100%; 
+                left: 0; 
             }
+
+            // &::before {      
+            //     content: "";
+            //     border-bottom: 2px solid white;
+            //     -webkit-transition: .5s;
+            //     transition: .5s;
+            //     color: white;
+            //     height: 2px;
+            //     position: absolute;
+            //     top: 30px;
+            // }
+
+            // &:hover::before {
+            //     padding-right: var(--width-underline);
+            // }
         }
     }
 
@@ -73,7 +98,7 @@ footer {
 }
 
 main {
-    margin: 0 200px;
+    margin: 0 12.5vw;
 
     .embed {
         border-radius: 25px;
