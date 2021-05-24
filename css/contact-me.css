@@ -32,7 +32,7 @@ button {
   color: #d4d4d4;
 }
 
-.flex-center, .flex-col, .flex-row {
+.flex-center, .flex-col, .flex-row, .contact-info > .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +51,7 @@ button {
           flex-direction: column;
 }
 
-.flex-row {
+.flex-row, .contact-info > .contact {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -81,4 +81,28 @@ button {
 img.logo {
   width: 35px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.contact-info {
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact-info > .contact {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-top: 15px;
+}
+
+.contact-info > .contact > img {
+  margin-right: 25px;
+}
+/*# sourceMappingURL=contact-me.css.map */

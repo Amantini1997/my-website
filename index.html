@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact-me.css">
     <!-- <link rel="stylesheet" href="css/blurredBg.css"> -->
     
-    <!-- <script src="vendor/vantaInitializer.js"></script> -->
+    <script src="vendor/vantaInitializer.js"></script>
 </head>
 <body>
     <header id="animated-bg">
@@ -30,55 +31,75 @@
     <main>
         <section id="about-me">
             <h2>About Me</h2>
-
-            This website is still a WIP. Please do not rely on it is not a fully developed website yet.
+            <p>
+                Hi, and welcome to my website.
+            </p>
+            <p>
+                My name is Alessandro. I am soon to graduate computer scientist from Italy.
+                I am currently studying <i>Computer Science with Management</i> at <a>King's College London</a>.
+            </p>
+            <p>
+                I love to create websites using responsive web design to turn them into Progressive Web Apps (PWAs).
+                To do so, I often rely on Angular 2+ and Typescript, but I also happen to do so in plain Javascript. 
+            </p>
+            <p>
+                Machine Learning is also something I am really into. Their algorithms, models, techniques, and, overall, 
+                the results that Machine Learning achieves marvel me. To learn and practice with these branch of IT, I learnt
+                and I keep writing Python code.
+            </p>
+            <p>
+                To find more about my project you can visit my <a href="https://www.github.com/amantini1997">GitHub</a>.
+                <br>
+                To find more about my background and skills please visit this <a href="https://amantini1997.github.io/CV-PDFLike/">website</a>.
+            </p>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
 
-            <h3>
-                <a href="https://amantini1997.github.io/Memo/">
-                    Memo App
-                </a>
-            </h3>
-            <div class="memo">
-                <div class="overlap memo__image">
-                    <div class="phone">
-                        <img class="frame" src="./img/P30 frame.png">
+            <div class="indent">
+                <h3>
+                    <a href="https://amantini1997.github.io/Memo/">
+                        Memo App
+                    </a>
+                </h3>
+                <div class="memo">
+                    <div class="overlap memo__image">
+                        <div class="phone">
+                            <img class="frame" src="./img/P30 frame.png">
+                        </div>
+                        <div class="flex-col trans-bg">
+                            <iframe src="https://amantini1997.github.io/Memo/"
+                                class="embed"
+                                width="290" height="570" frameborder="0">
+                                <p>
+                                    <a href="https://amantini1997.github.io/Memo/">
+                                        Fallback link for browsers that don't support iframes
+                                    </a>
+                                </p>
+                            </iframe>
+                        </div>
                     </div>
-                    <div class="flex-col trans-bg">
-                        <iframe src="https://amantini1997.github.io/Memo/"
-                            class="embed"
-                            width="290" height="570" frameborder="0">
-                            <p>
-                                <a href="https://amantini1997.github.io/Memo/">
-                                    Fallback link for browsers that don't support iframes
-                                </a>
-                            </p>
-                        </iframe>
-                    </div>
-                </div>
-                <div class="memo__description">
-                    <div>
-                        This is a simple webapp created to store memoes. The app is composed by 3 pages:
-                    </div>
-                    <ul>
-                        <li>The initial one allows to control the existing memoes, edit, and delete them;</li>
-                        <li>The page on the left allows to create new memoes that will appear on the main page;</li>
-                        <li>The page on the right is the settings page. At the moment, all it allows for is to 
-                            activate the night mode.
-                        </li>
-                    </ul>
-
-                    <div>
-                        The app is realised in plain Javascript (ES6), HTML, and CSS and it implements a webmanifest which makes it 
-                        a fully working Progressive Wep App (PWA).
-                    </div>
-                    <br>
-                    <div>
-                        The app on the preview is actually interactive and can be tested from this page. 
-                        But for a better experience, click this <a href="https://amantini1997.github.io/Memo/">link</a>.
+                    <div class="memo__description">
+                        <div>
+                            This is a simple webapp created to store memoes. The app is composed by 3 pages:
+                        </div>
+                        <ul>
+                            <li>The initial one allows to control the existing memoes, edit, and delete them;</li>
+                            <li>The page on the left allows to create new memoes that will appear on the main page;</li>
+                            <li>The page on the right is the settings page. At the moment, all it allows for is to 
+                                activate the night mode.
+                            </li>
+                        </ul>
+    
+                        <p>
+                            The app is realised in plain Javascript (ES6), HTML, and CSS and it implements a webmanifest which makes it 
+                            a fully working Progressive Wep App (PWA).
+                        </p>
+                        <p>
+                            The app on the preview is actually interactive and can be tested from this page. 
+                            But for a better experience, click this <a href="https://amantini1997.github.io/Memo/">link</a>.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -87,16 +108,26 @@
 
         <section id="contact-me">
             <h2>Contact Me</h2>
-
+            <div class="contact-info indent">
+                <div class="contact">
+                    <img src="./img/phone-gray.png" class="logo" alt="Phone">
+                    <span> +44 79191824459</span>
+                </div>
+                <div class="contact">
+                    <img src="./img/email-gray.png" class="logo" alt="Email">
+                    <span> ale.amantini1997@gmail.com</span>
+                </div>
+            </div>
         </section>
-    </main>
+    </main> 
     <footer>
-        <span>Last Update: 19 - 05 - 2021</span>
+        <span>Last Update: 24 - 05 - 2021</span>
         <div>
             <a href="https://www.github.com/amantini1997">
-                <img src="./img/github.png" alt="Github">
+                <img src="./img/github-gray.png" class="logo" alt="Github">
             </a>
         </div>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
 </body>
 </html>

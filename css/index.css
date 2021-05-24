@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: white;
+  color: #d4d4d4;
 }
 
 h2 {
@@ -29,7 +29,7 @@ button {
   outline: none;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  color: white;
+  color: #d4d4d4;
 }
 
 .flex-center, .flex-col, .flex-row, footer {
@@ -74,6 +74,14 @@ button {
   background-color: transparent;
 }
 
+.indent {
+  padding-left: 30px;
+}
+
+img.logo {
+  width: 35px;
+}
+
 :root {
   --header-height: 450px;
 }
@@ -84,7 +92,7 @@ header {
 
 header * {
   background-color: transparent;
-  color: white;
+  color: #d4d4d4;
 }
 
 header > nav {
@@ -94,7 +102,7 @@ header > nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  color: white;
+  color: #d4d4d4;
   margin: 10px 30px 40px;
 }
 
@@ -106,7 +114,7 @@ header > nav > a {
   padding: 10px;
   position: relative;
   outline: none;
-  color: white;
+  color: #d4d4d4;
   margin: 10px 20px;
 }
 
@@ -141,7 +149,7 @@ header .show-up {
   height: 67px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: white;
+  color: #d4d4d4;
   font-size: 2.5rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -155,15 +163,12 @@ footer * {
 }
 
 footer {
-  color: white;
+  color: #d4d4d4;
   height: 100px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-}
-
-footer img {
-  width: 35px;
+  margin-top: 50px;
 }
 
 main {

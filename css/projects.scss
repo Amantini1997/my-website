@@ -2,7 +2,8 @@
 
 .memo {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);    
+    margin-top: 50px;
 
     &__image {
         justify-content: center;
@@ -15,8 +16,8 @@
 
             &::before {
                 content: "-";
-                background-color: #fff;
-                color: #fff;
+                background-color: $white;
+                color: $white;
                 width: 313px;
                 height: 40px;
             }

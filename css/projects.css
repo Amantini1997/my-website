@@ -2,6 +2,7 @@
 html,
 body {
   margin: 0;
+  background-color: #000;
 }
 
 h1,
@@ -10,7 +11,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: white;
+  color: #d4d4d4;
+}
+
+h2 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
 }
 
 button {
@@ -22,7 +29,7 @@ button {
   outline: none;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  color: white;
+  color: #d4d4d4;
 }
 
 .flex-center, .flex-col, .memo__image iframe, .flex-row {
@@ -67,11 +74,16 @@ button {
   background-color: transparent;
 }
 
+.indent {
+  padding-left: 30px;
+}
+
 .memo {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[2];
       grid-template-columns: repeat(2, auto);
+  margin-top: 50px;
 }
 
 .memo__image {
@@ -87,8 +99,8 @@ button {
 
 .memo__image iframe::before {
   content: "-";
-  background-color: #fff;
-  color: #fff;
+  background-color: #d4d4d4;
+  color: #d4d4d4;
   width: 313px;
   height: 40px;
 }
