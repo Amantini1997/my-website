@@ -11,13 +11,14 @@ h3,
 h4,
 h5,
 h6 {
-  color: #d4d4d4;
+  color: #e9e9e9;
 }
 
-h2 {
-  margin-top: 50px;
+.section-title {
+  margin-top: 100px;
   text-transform: uppercase;
   letter-spacing: 0.10em;
+  font-size: 30px;
 }
 
 button {
@@ -29,7 +30,12 @@ button {
   outline: none;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  color: #d4d4d4;
+  color: #e9e9e9;
+  line-height: 1.6rem;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 .flex-center, .flex-col, .flex-row, .contact-info > .contact {
@@ -61,6 +67,12 @@ button {
 .overlap {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .overlap > * {

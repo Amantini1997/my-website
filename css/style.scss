@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-$white: rgb(212, 212, 212);
+$white: rgb(233, 233, 233); 
+$white-active: #fff;
 
 html,
 body {
@@ -17,10 +18,11 @@ h6 {
     color: $white;
 }
 
-h2 {
-    margin-top: 50px;
+.section-title {
+    margin-top: 100px;
     text-transform: uppercase;
     letter-spacing: 0.10em;
+    font-size: 30px;
 }
 
 button {
@@ -32,6 +34,11 @@ button {
     outline: none;
     box-sizing: content-box;
     color: $white;
+    line-height: 1.6rem;
+}
+
+li {
+    margin-bottom: 10px;
 }
 
 .flex-center { 
@@ -52,6 +59,8 @@ button {
 
 .overlap {
     display: grid;
+    justify-content: center;
+    align-items: center;
 
     > * {
         grid-column-start: 1;
@@ -62,7 +71,7 @@ button {
 .trans-bg {
     background-color: transparent;
 }
-
+ 
 .indent {
     padding-left: 30px;
 }

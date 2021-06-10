@@ -10,6 +10,11 @@ header {
     * {
         background-color: transparent;
         color: $white;
+        transition: 0.3s; 
+    }
+
+    *:hover {
+        color: $white-active;
     }
 
     > nav {
@@ -78,6 +83,8 @@ header {
         font-size: 2.5rem;
         width: fit-content;
         letter-spacing: 1px;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -96,20 +103,8 @@ footer {
 
 main {
     margin: 0 12.5vw;
-
-    .embed {
-        border-radius: 25px;
-        float: var(--float);
-    }
 }
 
-@keyframes underline-lr {
-    from {
-
-    } to {
-
-    }
-}
 
 @keyframes showUp {
     from {

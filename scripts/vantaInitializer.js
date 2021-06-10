@@ -1,11 +1,11 @@
 const BIRDS = true;
 
-import("https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js")
+import("../vendor/three.min.js")
     .then(_ => loadVanta());
 
 function loadVanta() {
     if (BIRDS) {
-        import("https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js")
+        import("../vendor/vanta.birds.min.js")
                 .then(_ => {
                     VANTA.BIRDS({
                         el: "#animated-bg",
@@ -50,7 +50,7 @@ function loadVanta() {
                 })
                 .catch(err => console.error("Birds not loaded: \n", err));
                 
-        import("https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js")
+        import("../vendor/vanta.birds.min.js")
                 .then(_ => {
                     setVantaBody(VANTA);
                 })
@@ -60,7 +60,7 @@ function loadVanta() {
 
 function setVantaBody(VANTA){
     VANTA.BIRDS({
-        el: "body",
+        el: "#luxy",
         mouseControls: false,
         touchControls: false,
         gyroControls: false,

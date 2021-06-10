@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,132 +9,138 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/contact-me.css">
+    <link rel="stylesheet" href="css/parallax.css">
     <!-- <link rel="stylesheet" href="css/blurredBg.css"> -->
     
-    <script src="vendor/vantaInitializer.js"></script>
+    <script src="scripts/vantaInitializer.js"></script>
 </head>
 <body>
-    <header id="animated-bg">
-        <nav id="section-selector">
-            <a href="#about-me">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact-me">Contact Me</a>
-        </nav>
-        <div id="abstract" class="flex-col">
-            <span class="show-up" style="--delay-show-up: .2s">Hi, I'm Alessandro. I design & build</span> 
-            <span class="show-up" style="--delay-show-up: .5s">Websites and I have a passion for</span> 
-            <span class="show-up" style="--delay-show-up: .8s">Machine Learning</span>
-        </div>
-        <!-- <div class="card flex-center">
-            Amantini Alessandro 
-        </div> -->
-    </header>
-    <main>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>
-                Hi, and welcome to my website.
-            </p>
-            <p>
-                My name is Alessandro. I am soon to graduate computer scientist from Italy.
-                I am currently studying <i>Computer Science with Management</i> at <a>King's College London</a>.
-            </p>
-            <p>
-                I love to create websites using responsive web design to turn them into Progressive Web Apps (PWAs).
-                To do so, I often rely on Angular 2+ and Typescript, but I also happen to do so in plain Javascript. 
-            </p>
-            <p>
-                Machine Learning is also something I am really into. Their algorithms, models, techniques, and, overall, 
-                the results that Machine Learning achieves marvel me. To learn and practice with these branch of IT, I learnt
-                and I keep writing Python code.
-            </p>
-            <p>
-                To find more about my project you can visit my <a href="https://www.github.com/amantini1997">GitHub</a>.
-                <br>
-                To find more about my background and skills please visit this <a href="https://amantini1997.github.io/CV-PDFLike/">website</a>.
-            </p>
-        </section>
+    <div id="luxy">
+        <header id="animated-bg">
+            <nav id="section-selector">
+                <a href="#about-me">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact-me">Contact Me</a>
+            </nav>
+            <div id="abstract" class="flex-col">
+                <span class="show-up" style="--delay-show-up: 1.2s">Hi, I'm Alessandro. I design & build</span> 
+                <span class="show-up" style="--delay-show-up: 1.5s">Websites and I have a passion for</span> 
+                <span class="show-up" style="--delay-show-up: 1.8s">Machine Learning</span>
+            </div>
+            <!-- <div class="card flex-center">
+                Amantini Alessandro 
+            </div> -->
+        </header>
+        <main>
+            <section id="about-me">
+                <h1 class="section-title">About Me</h1>
+                <p>
+                    Hi, and welcome to my website.
+                </p>
+                <p>
+                    My name is Alessandro. I am a soon to graduate computer scientist from Italy.
+                    I am currently studying <i>Computer Science with Management</i> at <a>King's College London</a>.
+                </p>
+                <p>
+                    I love to create websites using responsive web design to turn them into Progressive Web Apps (PWAs).
+                    To do so, I often rely on Angular 2+ and Typescript, but I also happen to use plain Javascript. 
+                </p>
+                <p>
+                    Machine Learning is also something I am really into. Their algorithms, models, techniques, and, overall, 
+                    the results that Machine Learning achieves marvel me. To learn and practice with this IT branch, I learnt
+                    and I keep writing Python code.
+                </p>
+                <p>
+                    To find out more about my projects you can visit my <a href="https://www.github.com/amantini1997">GitHub</a>.
+                    <br>
+                    To find out more about my background and skills please visit this web version of my <a href="https://amantini1997.github.io/CV-PDFLike/">CV</a>.
+                </p>
+            </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
+            <section id="projects">
+                <h1 class="section-title">Projects</h1>
 
+                <div class="project">
+                    <div class="memo">
+                        <div class="memo__image">
+                            <div class="overlap luxy-el" data-speed-y="-10" data-offset="250">
+                                <!-- Background Frame -->
+                                <div class="phone">
+                                    <img class="frame" src="./img/iphone X with banner.png">
+                                </div>
+                                <!-- Actual memo -->
+                                <div class="flex-col trans-bg phone">
+                                    <iframe src="https://amantini1997.github.io/Memo/"
+                                        class="embed"
+                                        width="283" height="542" frameborder="0"
+                                    >
+                                        <p>
+                                            <a href="https://amantini1997.github.io/Memo/">
+                                                Fallback link for browsers that don't support iframes
+                                            </a>
+                                        </p>
+                                    </iframe>
+                                </div>
+                                <!-- Overlay frame -->
+                                <div class="phone">
+                                    <img class="frame" src="./img/iphone X with banner.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="memo__description project-description">
+                            <h2 class="project-name">Memo App</h2>
+                            <div>
+                                This is a simple webapp created to store memoes. The app is composed by 3 pages:
+                            </div>
+                            <ul>
+                                <li>The initial one allows to control the existing memoes, edit, and delete them;</li>
+                                <li>The page on the left allows to create new memoes that will appear on the main page;</li>
+                                <li>The page on the right is the settings page. At the moment, all it allows for is to 
+                                    activate the night mode.
+                                </li>
+                            </ul>
+        
+                            <p>
+                                The app is realised in plain Javascript (ES6), HTML, and CSS and it implements a webmanifest which makes it 
+                                a fully working Progressive Wep App (PWA).
+                            </p>
+                            <p>
+                                The app on the preview is actually interactive and can be tested from this page. 
+                                But for a better experience, click this <a href="https://amantini1997.github.io/Memo/">link</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+
+            <section id="contact-me">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-info indent">
+                    <div class="contact">
+                        <img src="./img/phone-gray.png" class="logo" alt="Phone">
+                        <span> +44 79191824459</span>
+                    </div>
+                    <div class="contact">
+                        <img src="./img/email-gray.png" class="logo" alt="Email">
+                        <span> ale.amantini1997@gmail.com</span>
+                    </div>
+                </div>
+            </section>
+        </main> 
+        <footer>
+            <span>Last Update: 24 - 05 - 2021</span>
             <div>
-                <h3>
-                    <a href="https://amantini1997.github.io/Memo/">
-                        Memo App
-                    </a>
-                </h3>
-                <div class="memo">
-                    <div class="overlap memo__image">
-                        <!-- background -->
-                        <div class="phone">
-                            <img class="frame" src="./img/P30-frame-bg.png">
-                        </div>
-                        <!-- Actual memo -->
-                        <div class="flex-col trans-bg">
-                            <iframe src="https://amantini1997.github.io/Memo/"
-                                class="embed"
-                                width="290" height="570" frameborder="0">
-                                <p>
-                                    <a href="https://amantini1997.github.io/Memo/">
-                                        Fallback link for browsers that don't support iframes
-                                    </a>
-                                </p>
-                            </iframe>
-                        </div>
-                        <!-- Overlay frame -->
-                        <div class="phone">
-                            <img class="frame" src="./img/P30 frame.png">
-                        </div>
-                    </div>
-                    <div class="memo__description">
-                        <div>
-                            This is a simple webapp created to store memoes. The app is composed by 3 pages:
-                        </div>
-                        <ul>
-                            <li>The initial one allows to control the existing memoes, edit, and delete them;</li>
-                            <li>The page on the left allows to create new memoes that will appear on the main page;</li>
-                            <li>The page on the right is the settings page. At the moment, all it allows for is to 
-                                activate the night mode.
-                            </li>
-                        </ul>
-    
-                        <p>
-                            The app is realised in plain Javascript (ES6), HTML, and CSS and it implements a webmanifest which makes it 
-                            a fully working Progressive Wep App (PWA).
-                        </p>
-                        <p>
-                            The app on the preview is actually interactive and can be tested from this page. 
-                            But for a better experience, click this <a href="https://amantini1997.github.io/Memo/">link</a>.
-                        </p>
-                    </div>
-                </div>
+                <a href="https://www.github.com/amantini1997">
+                    <img src="./img/github-gray.png" class="logo" alt="Github">
+                </a>
             </div>
-        </section>
-        <br>
-
-        <section id="contact-me">
-            <h2>Contact Me</h2>
-            <div class="contact-info indent">
-                <div class="contact">
-                    <img src="./img/phone-gray.png" class="logo" alt="Phone">
-                    <span> +44 79191824459</span>
-                </div>
-                <div class="contact">
-                    <img src="./img/email-gray.png" class="logo" alt="Email">
-                    <span> ale.amantini1997@gmail.com</span>
-                </div>
-            </div>
-        </section>
-    </main> 
-    <footer>
-        <span>Last Update: 24 - 05 - 2021</span>
-        <div>
-            <a href="https://www.github.com/amantini1997">
-                <img src="./img/github-gray.png" class="logo" alt="Github">
-            </a>
-        </div>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    </footer>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </footer>
+        <!-- PARALLAX -->
+        <script src="./vendor/rellax.min.js"></script>
+        <script src="./vendor/luxy.js" charset="utf-8"></script>
+        <script src="./scripts/parallaxInitializer.js"></script>
+    </div>
 </body>
 </html>

@@ -1,7 +1,23 @@
 @import "./style.scss";
 
+.project-name {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-description {
+    background: #64646424;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    height: fit-content;
+    align-self: center;
+} 
+
 .memo {
     display: grid;
+    align-items: center; 
     grid-template-columns: repeat(2, auto);    
     margin-top: 50px;
 
@@ -14,8 +30,8 @@
         iframe {
             @extend .flex-col;
 
-            &::before {
-                content: "-";
+            &::after {
+                content: " ";
                 background-color: $white;
                 color: $white;
                 width: 313px;
@@ -30,6 +46,10 @@
                 z-index: -2;
             }
 
+            .embed {
+                margin-top: 8px;
+            }
+
             .frame {
                 background-color: transparent;
                 width: 313px;
@@ -40,9 +60,5 @@
             }
     
         }
-    }
-
-    &__description {
-        padding: 40px;
     }
 } 
