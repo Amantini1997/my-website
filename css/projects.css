@@ -131,6 +131,12 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .project-description {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
