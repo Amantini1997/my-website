@@ -1,11 +1,7 @@
 @use "variables" as *;
 
-:root {
-    --header-height: 450px;
-}
-
 header {
-    height: var(--header-height);
+    height: 450px;
     transition: all 0s;
 
     * {
@@ -128,7 +124,7 @@ footer {
 @media screen and (max-width: $m) {
 
     header {
-        height: 100vh;
+        height: calc(100vh - 60px);
 
         & > nav {
             display: none;

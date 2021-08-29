@@ -2,12 +2,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-:root {
-  --header-height: 450px;
-}
-
 header {
-  height: var(--header-height);
+  height: 450px;
   transition: all 0s;
 }
 header * {
@@ -101,7 +97,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   header {
-    height: 100vh;
+    height: calc(100vh - 60px);
   }
   header > nav {
     display: none;
