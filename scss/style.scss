@@ -1,12 +1,11 @@
+@use "variables" as *;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-$white: rgb(233, 233, 233); 
-$white-active: #fff;
 
 html,
 body {
     margin: 0;
-    background-color: #000;
+    background-color: $black;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -34,7 +33,8 @@ button {
     outline: none;
     box-sizing: content-box;
     color: $white;
-    line-height: 1.6rem;
+    // line-height: 1.6rem;
+    line-height: 1.25
 }
 
 li {
@@ -78,4 +78,65 @@ li {
 
 img.logo {
     width: 35px;
+    transition: filter .4s;
+
+    &:hover {
+        filter: brightness(1.5);
+    }
+}
+
+
+.hidden {
+    display: none;
+    transition: all 0s;
+}
+
+@media screen and (min-width: $l + 1px) {
+    .large-screen {
+        display: block;
+    }
+    
+    .medium-screen {
+        display: none;
+        transition: all 0s;
+    } 
+
+    .small-screen {
+        display: none;
+        transition: all 0s;
+    }
+}
+
+
+@media screen and (min-width: $s + 1px) and (max-width: $l) {
+    .large-screen {
+        display: none;
+        transition: all 0s;
+    }
+    
+    .medium-screen {
+        display: block;
+    } 
+
+    .small-screen {
+        display: none;
+        transition: all 0s;
+    }
+}
+
+
+@media screen and (max-width: $s) {
+    .large-screen {
+        display: none;
+        transition: all 0s;
+    }
+    
+    .medium-screen {
+        display: none;
+        transition: all 0s;
+    } 
+
+    .small-screen {
+        display: block;
+    } 
 }

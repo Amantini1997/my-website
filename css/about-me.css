@@ -1,0 +1,59 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+:root {
+  --skill-size: 12rem;
+  --skill-padding: 30px;
+}
+
+.hint {
+  font-size: small;
+  opacity: 0.8;
+}
+
+.rotator-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 60px 0;
+  backdrop-filter: blur(10px);
+}
+.rotator-ctn > .rotator-item {
+  width: var(--skill-size);
+  height: var(--skill-size);
+  padding: var(--skill-padding);
+  text-align: center;
+}
+.rotator-ctn > .rotator-item > img {
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --skill-size: 8rem;
+    --skill-padding: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  :root {
+    --skill-size: 7rem;
+    --skill-padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --skill-size: 6rem;
+    --skill-padding: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  :root {
+    --skill-size: 4rem;
+    --skill-padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=about-me.css.map */

@@ -1,5 +1,3 @@
-@import "./style.scss";
-
 .contact-info {
     line-height: 25px;
     display: flex;
@@ -7,12 +5,15 @@
     justify-content: space-around;
 
     > .contact {
-        @extend .flex-row;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: left;
+
         margin-top: 15px;
         
         > img {
             margin-right: 25px;
-        } 
-    }
+        }  
+    } 
 }

@@ -1,0 +1,62 @@
+@use "variables/" as *;
+
+:root {
+    --skill-size: 12rem;
+    --skill-padding: 30px;
+}
+
+.hint {
+    font-size: small;
+    opacity: .8; 
+} 
+
+.rotator-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    max-width: 100%;
+    margin: 60px 0; 
+    backdrop-filter: blur(10px); 
+ 
+    > .rotator-item { 
+        width: var(--skill-size);
+        height: var(--skill-size);
+        padding: var(--skill-padding);
+        text-align: center;
+
+        > img {
+            height: 100%;
+        } 
+    } 
+}
+
+@media screen and (max-width: $xl) {
+    :root {
+        --skill-size: 8rem;
+        --skill-padding: 30px;
+    }
+}
+
+@media screen and (max-width: $l) {
+    :root {
+        --skill-size: 7rem;
+        --skill-padding: 20px;
+    }
+}
+
+@media screen and (max-width: $m) {
+    :root {
+        --skill-size: 6rem;
+        --skill-padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: $s) {
+    :root {
+        --skill-size: 4rem;
+        --skill-padding: 10px;
+    }
+}
