@@ -67,6 +67,10 @@ header .show-up {
   letter-spacing: 1px;
 }
 
+.small-screen .show-up {
+  font-size: 2rem;
+}
+
 main {
   margin: 0 12.5vw;
 }

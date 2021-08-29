@@ -70,10 +70,6 @@ li {
   background-color: transparent;
 }
 
-.indent {
-  padding-left: 30px;
-}
-
 img.logo {
   width: 35px;
   transition: filter 0.4s;
@@ -82,54 +78,40 @@ img.logo:hover {
   filter: brightness(1.5);
 }
 
-.hidden {
-  display: none;
-  transition: all 0s;
-}
-
 @media screen and (min-width: 993px) {
   .large-screen {
     display: block;
   }
 
-  .medium-screen {
-    display: none;
-    transition: all 0s;
-  }
-
-  .small-screen {
+  .medium-screen,
+.small-screen,
+.small-medium-screen {
     display: none;
     transition: all 0s;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 992px) {
-  .large-screen {
-    display: none;
-    transition: all 0s;
-  }
-
-  .medium-screen {
+  .medium-screen,
+.small-medium-screen {
     display: block;
   }
 
-  .small-screen {
+  .large-screen,
+.small-screen {
     display: none;
     transition: all 0s;
   }
 }
 @media screen and (max-width: 600px) {
-  .large-screen {
-    display: none;
-    transition: all 0s;
-  }
-
-  .medium-screen {
-    display: none;
-    transition: all 0s;
-  }
-
-  .small-screen {
+  .small-screen,
+.small-medium-screen {
     display: block;
+  }
+
+  .large-screen,
+.medium-screen {
+    display: none;
+    transition: all 0s;
   }
 }
 

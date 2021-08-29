@@ -1,19 +1,39 @@
+@use "variables" as *;
+
 .contact-info {
     line-height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-left: 30px;
 
     > .contact {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: left;
-
+ 
         margin-top: 15px;
         
         > img {
             margin-right: 25px;
         }  
     } 
+}
+
+
+
+.author {
+    text-align: center;
+}
+
+
+@media screen and (max-width: $s) {
+    .contact-info {
+        padding-left: 0;
+
+        .logo {
+            width: 20px;
+        }
+    }
 }
