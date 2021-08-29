@@ -85,23 +85,14 @@ img.logo {
     }
 }
 
-
-.hidden {
-    display: none;
-    transition: all 0s;
-}
-
 @media screen and (min-width: $l + 1px) {
     .large-screen {
         display: block;
     }
     
-    .medium-screen {
-        display: none;
-        transition: all 0s;
-    } 
-
-    .small-screen {
+    .medium-screen,
+    .small-screen,
+    .small-medium-screen {
         display: none;
         transition: all 0s;
     }
@@ -109,15 +100,12 @@ img.logo {
 
 
 @media screen and (min-width: $s + 1px) and (max-width: $l) {
-    .large-screen {
-        display: none;
-        transition: all 0s;
-    }
-    
-    .medium-screen {
+    .medium-screen,
+    .small-medium-screen {
         display: block;
-    } 
+    }
 
+    .large-screen,
     .small-screen {
         display: none;
         transition: all 0s;
@@ -126,17 +114,14 @@ img.logo {
 
 
 @media screen and (max-width: $s) {
-    .large-screen {
-        display: none;
-        transition: all 0s;
-    }
-    
+    .small-screen,
+    .small-medium-screen {
+        display: block;
+    } 
+
+    .large-screen,
     .medium-screen {
         display: none;
         transition: all 0s;
-    } 
-
-    .small-screen {
-        display: block;
     } 
 }
